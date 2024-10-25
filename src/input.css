@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+
+
+    .ham-menu {
+        @apply h-[35px] w-[35px] ml-auto relative z-[4] hover:cursor-pointer 2md:hidden;
+    }
+
+    .ham-menu span {
+        @apply h-[4px] w-[100%] bg-green-900 rounded-3xl absolute top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out;
+    }
+
+    .ham-menu span:nth-child(1) {
+        @apply top-1/4;
+    }
+
+    .ham-menu span:nth-child(3) {
+        @apply top-[75%];
+    }
+
+    .ham-menu.active2 span {
+        @apply bg-green-900;
+    }
+
+    .ham-menu.active2 span:nth-child(1) {
+        @apply top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45;
+    }
+
+    .ham-menu.active2 span:nth-child(2) {
+        @apply opacity-0;
+    }
+
+    .ham-menu.active2 span:nth-child(3) {
+        @apply -rotate-45 top-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+
+
+
+     /* .nav-list {
+        @apply text-center sm:overflow-x-hidden h-auto w-[90%] bg-white top-24 right-[0%] z-50 absolute text-3 py-5 transition-all duration-500 ease-in-out 2md:block gap-10 rounded-md lg:relative lg:right-0 lg:bg-none lg:py-0 lg:top-0 lg:flex items-center lg:w-auto;
+    } */
+
+    .nav-list.active2 {
+        @apply absolute left-[5%] shadow-3xl;} 
+
+    
+}
