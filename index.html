@@ -18,11 +18,11 @@
 <body class="bg-gray-50 text-gray-800 overflow-x-hidden">
 
     <!-- Navbar -->
-    <header class="bg-white shadow">
-        <nav class="mx-auto flex justify-between items-center py-4 w-[90%] m-auto">
+    <header class="bg-white shadow overflow-hidden">
+        <nav class="mx-auto flex justify-between items-center sm:py-4 w-[90%] m-auto overflow-hidden">
             
                 <div class="flex items-center"><img class="w-24 h-24"
-                        src="./images/Flyerwiz_1727775226349-removebg-preview.png" alt="skillfull Online logo"><span
+                        src="/images/Flyerwiz_1727775226349-removebg-preview.png" alt="skillfull Online logo"><span
                         class="font-semibold text-2xl sm:block hidden">skilfulonline</span></div>
                 <div class="ham-menu" aria-label="Menu button">
 
@@ -47,23 +47,25 @@
 
     <!-- Hero Section -->
     <section
-        class="bg-hero-image relative py-20 text-center text-white bg-cover bg-center h-screen flex items-center justify-center"
-        style="background-image: url(./images/hero-image-light-bulb.png);">
+        class="bg-hero-image relative py-20 text-center text-white bg-cover bg-center sm:h-screen h-[80vh] flex items-center justify-center"
+        style="background-image: url(/images/hero-image-light-bulb.png);">
         <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay -->
         <div class="relative z-10">
             <h1 class="text-4xl font-bold mb-4">Unlock Your Potential – Offer or Find Services with Skilful Online
             </h1>
             <p class="text-lg mb-8">Where students connect, collaborate, and earn by sharing their skills and
                 talents.</p>
-            <button
-                class="transition-all duration-300 hover:scale-110 transform ease  bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700"><a
-                    href="http://skilfulonline.site/register">Sign Up for Early</a>
-                Access</button>
-            <button
-                class="transition-all ease duration-300 hover:scale-110 ml-4 bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">
-                <a href="https://stats.sender.net/forms/dwpm98/view" class="">Join the
-                    Waitlist</a>
-            </button>
+            <div class="flex items-center justify-center  sm:flex-row flex-col space-y-5">
+                <button
+                    class="transition-all duration-300 hover:scale-110 transform ease  bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700"><a
+                        href="http://skilfulonline.site/register">Sign Up for Early</a>
+                    Access</button>
+                <button
+                    class="transition-all ease duration-300 hover:scale-110 ml-4 bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">
+                    <a href="https://stats.sender.net/forms/dwpm98/view" class="">Join the
+                        Waitlist</a>
+                </button>
+            </div>
         </div>
 
     </section>
@@ -83,7 +85,7 @@
                     affordable, reliable services within your community.</p>
             </div>
 
-            <div class="2md:w-1/2 "><img src="./images/brooke-cagle--uHVRvDr7pg-unsplash (1).jpg" alt="students"></div>
+            <div class="2md:w-1/2 "><img src="/images/brooke-cagle--uHVRvDr7pg-unsplash (1).jpg" alt="students"></div>
         </div>
     </section>
 
@@ -94,23 +96,25 @@
         </path>
     </svg>
     <section id="how-it-works" class=" bg-green-100 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">How Skilful Online Works</h2>
-        <div class="container mx-auto flex-col flex items-center justify-center 2md:gap-8 space-y-10 mt-8">
-            <div class="">
-                <h3 class="font-bold text-xl mb-2">Step 1: Create an Account</h3>
-                <p>Sign up for free to join our community of service providers or users looking for help.</p>
+       <div class="w-[90%] m-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">How Skilful Online Works</h2>
+            <div class="container mx-auto flex-col flex items-center justify-center 2md:gap-8 space-y-10 mt-8">
+                <div class="">
+                    <h3 class="font-bold text-xl mb-2">Step 1: Create an Account</h3>
+                    <p>Sign up for free to join our community of service providers or users looking for help.</p>
+                </div>
+                <div class=""> 
+                    <h3 class="font-bold text-xl mb-2">Step 2: List or Discover Services</h3>
+                    <p>Easily list your service or browse available services in categories like tutoring, graphic design,
+                        personal grooming, and more.</p>
+                </div>
+                <div class="">
+                    <h3 class="font-bold text-xl mb-2">Step 3: Connect & Collaborate</h3>
+                    <p>Communicate directly with users, arrange services, and start building your network.</p>
+                </div>
             </div>
-            <div class=""> 
-                <h3 class="font-bold text-xl mb-2">Step 2: List or Discover Services</h3>
-                <p>Easily list your service or browse available services in categories like tutoring, graphic design,
-                    personal grooming, and more.</p>
-            </div>
-            <div class="">
-                <h3 class="font-bold text-xl mb-2">Step 3: Connect & Collaborate</h3>
-                <p>Communicate directly with users, arrange services, and start building your network.</p>
-            </div>
-        </div>
-        <button class="mt-8 bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">Get Started Today</button>
+            <button class="mt-8 bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">Get Started Today</button>
+       </div>
     </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#def7ec" fill-opacity="1"
@@ -119,24 +123,26 @@
     </svg>
     <!-- What We Offer Section -->
     <section id="offers" class="py-16 bg-gray-50 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Skilful Online?</h2>
-        <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">For service providers, users, and everyone in
-            between, Skilful Online provides a trusted platform that connects you with affordable, reliable services.
-        </p>
-        <div class="container mx-auto grid md:grid-cols-3 gap-8">
-            <div class="bg-green-50 shadow-md rounded-lg p-6">
-                <h3 class="font-bold text-xl mb-2">For Service Providers</h3>
-                <p>Monetize your skills and expand your network. Showcase your expertise, build a portfolio, and earn
-                    from anywhere.</p>
-            </div>
-            <div class="bg-green-50 shadow-md rounded-lg p-6">
-                <h3 class="font-bold text-xl mb-2">For Users</h3>
-                <p>Find trusted, affordable services. Whether you need academic support, personal care, or creative
-                    work, we have it covered.</p>
-            </div>
-            <div class="bg-green-50 shadow-md rounded-lg p-6">
-                <h3 class="font-bold text-xl mb-2">A Trusted Platform</h3>
-                <p>Every service provider is verified, ensuring a safe, reliable experience for everyone.</p>
+        <div class="w-[90%] m-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Skilful Online?</h2>
+            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">For service providers, users, and everyone in
+                between, Skilful Online provides a trusted platform that connects you with affordable, reliable services.
+            </p>
+            <div class="container mx-auto grid md:grid-cols-3 gap-8">
+                <div class="bg-green-50 shadow-md rounded-lg p-6">
+                    <h3 class="font-bold text-xl mb-2">For Service Providers</h3>
+                    <p>Monetize your skills and expand your network. Showcase your expertise, build a portfolio, and earn
+                        from anywhere.</p>
+                </div>
+                <div class="bg-green-50 shadow-md rounded-lg p-6">
+                    <h3 class="font-bold text-xl mb-2">For Users</h3>
+                    <p>Find trusted, affordable services. Whether you need academic support, personal care, or creative
+                        work, we have it covered.</p>
+                </div>
+                <div class="bg-green-50 shadow-md rounded-lg p-6">
+                    <h3 class="font-bold text-xl mb-2">A Trusted Platform</h3>
+                    <p>Every service provider is verified, ensuring a safe, reliable experience for everyone.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -164,47 +170,51 @@
                 Whether you want to offer services or find help, we’ve made it easy and safe for students to
                 collaborate.
             </p>
-            <a href="https://stats.sender.net/forms/dwpm98/view"
-                class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">Join the Waitlist</a>
-            <a href="http://skilfulonline.site/register"
-                class="ml-4 bg-white text-green-800 px-6 py-2 rounded hover:bg-green-600">Sign Up for Early
-                Access</a>
+            <div class="flex items-center justify-center sm:flex-row flex-col-reverse gap-5">
+                <a href="https://stats.sender.net/forms/dwpm98/view"
+                    class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">Join the Waitlist</a>
+                <a href="http://skilfulonline.site/register"
+                    class="ml-4 bg-white text-green-800 px-6 py-2 rounded hover:bg-green-600">Sign Up for Early
+                    Access</a>
+            </div>
         </div>
 
         <!-- Social Media Icons -->
         <div class="py-10 h-auto bg-black ">
-            <div class="flex items-center w-[90%] m-auto text-3 2md:justify-between flex-col 2md:flex-row ">
-                <div class="flex items-center"><img class="w-24 h-24"
-                        src="./images/Flyerwiz_1727775226349-removebg-preview.png" alt="skillfull Online logo"><span
-                        class="text-2xl font-semibold">skilfulonline</span></div>
-                <nav class="2md:space-x-4 space-y-10 2md:space-y-0 flex flex-col 2md:flex-row ">
-                    <a href="#about" class="hover:text-green-600 font-semibold">About Us</a>
-                    <a href="#how-it-works" class="hover:text-green-600 font-semibold">How It Works</a>
-                    <a href="#offers" class="hover:text-green-600 font-semibold">What We Offer</a>
-                    <a href="#newsletter" class="hover:text-green-600 font-semibold">Subscribe</a>
-                    <a href="#footer" class="hover:text-green-600 font-semibold">Get Started</a>
-                </nav>
-
-            </div>
-            <div class="mt-8 flex space-x-20 items-center justify-center">
-
-                <a href="https://www.instagram.com/skilful_online/"><i
-                        class="block text-4xl hover:text-yellow-500 fa-brands fa-instagram"></i></a>
-                <a href="https://chat.whatsapp.com/GrPWHze0x5OJxDtv3ujXlR"><i
-                        class="block text-4xl hover:text-yellow-500 fa-brands fa-whatsapp"></i></a>
-                <a href="https://x.com/skiful_online?t=Ts4HtvmmpM9P1e1KyzHsJQ&s=09"><i
-                        class="block text-4xl hover:text-yellow-500 fa-brands fa-x-twitter"></i></a>
-                <!-- <a href="#" ><i class="block text-4xl hover:text-yellow-500 fa-brands fa-linkedin"></i></a> -->
-                <a href="https://www.facebook.com/profile.php?id=100093528064393"><i
-                        class="block text-4xl hover:text-yellow-500 fa-brands fa-facebook"></i></a>
-
+            <div class="w-[90%] m-auto">
+                <div class="flex items-center  text-3 2md:justify-between flex-col 2md:flex-row ">
+                    <div class="flex items-center"><img class="w-24 h-24"
+                                src="/images/Flyerwiz_1727775226349-removebg-preview.png" alt="skillfull Online logo"><span
+                                class="text-2xl font-semibold">skilfulonline</span>
+                    </div>
+                        <nav class="2md:space-x-4 space-y-10 flex 2md:space-y-0 flex-col 2md:flex-row ">
+                            <a href="#about" class="hover:text-green-600 font-semibold">About Us</a>
+                            <a href="#how-it-works" class="hover:text-green-600 font-semibold">How It Works</a>
+                            <a href="#offers" class="hover:text-green-600 font-semibold">What We Offer</a>
+                            <a href="#newsletter" class="hover:text-green-600 font-semibold">Subscribe</a>
+                            <a href="#footer" class="hover:text-green-600 font-semibold">Get Started</a>
+                        </nav>
+    
+                </div>
+                <div class="mt-8 flex space-x-16  items-center justify-center">
+                    <a href="https://www.instagram.com/skilful_online/"><i
+                            class="block text-4xl hover:text-yellow-500 fa-brands fa-instagram"></i></a>
+                    <a href="https://chat.whatsapp.com/GrPWHze0x5OJxDtv3ujXlR"><i
+                            class="block text-4xl hover:text-yellow-500 fa-brands fa-whatsapp"></i></a>
+                    <a href="https://x.com/skiful_online?t=Ts4HtvmmpM9P1e1KyzHsJQ&s=09"><i
+                            class="block text-4xl hover:text-yellow-500 fa-brands fa-x-twitter"></i></a>
+                    <!-- <a href="#" ><i class="block text-4xl hover:text-yellow-500 fa-brands fa-linkedin"></i></a> -->
+                    <a href="https://www.facebook.com/profile.php?id=100093528064393"><i
+                            class="block text-4xl hover:text-yellow-500 fa-brands fa-facebook"></i></a>
+    
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Font Awesome for Social Media Icons -->
 
-<script src="./main/index.js"></script>
+<script src="/main/index.js"></script>
 </body>
 
 </html>
