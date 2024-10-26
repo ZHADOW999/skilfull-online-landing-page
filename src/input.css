@@ -48,7 +48,7 @@ html {
     } */
 
     .nav-list.active2 {
-        @apply absolute left-[5%] shadow-3xl;} 
+        @apply absolute right-[5%] shadow-3xl;} 
 
     
 }
